@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./surveyForm.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">sunflowerWeb Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="question-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="question-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required />
+        </div>
+        <div class="question-group">
+          <label for="number" id="number-label">Age <span>(optional)</span></label>
+          <input type="number" min=5 max=110 id="number" name="age" placeholder="Age" />
+        </div>
+        <div class="question-group">
+          <label>Which option best describes your current role?</label>
+          <select id="dropdown" required>
+            <option disabled selected>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </div>
+          <div class="question-group">
+            <label>Would you recommend sunflowerWeb to a friend?</label>
+              <div>
+                <input type="radio" name="recommend" id="definitely" value="one" />
+                <label for="definitely" >Definitely</label>
+              </div>
+              <div>
+                <input type="radio" name="recommend" id="maybe" value="two" />
+                <label for="maybe">Maybe</label>
+              </div>
+              <div>
+                <input id="notsure" type="radio" name="recommend" value="three"/>
+                <label for="notsure">Not sure</label>
+              </div>
+          </div>
+        <div id="dropdown" class="question-group">
+          <label>What is your favorite feature of sunflowerWeb?</label>
+          <select>
+            <option disabled selected>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+          </select>
+        </div>
+        <div class="question-group">
+          <label>What would you like to see improved? <span>(Check all that apply)</span></label>
+          <div>
+            <input type="checkbox" id="frontend" value="one" />
+            <label for="frontend">Front-end Projects</label>
+          </div>
+          <div>
+            <input class="checkbox" type="checkbox" id="backend" value="two" />
+            <label class="checkbox" for="backend">Back-end Projects</label>
+          </div>
+          <div>
+            <input type="checkbox" id="data" value="three" />
+            <label for="data">Data Visualization</label>
+          </div>
+          <div>
+            <input type="checkbox" id="challenges" value="four" />
+            <label for="challenges">Challenges</label>
+          </div>
+          <div>
+            <input type="checkbox" id="opensource" value="five"/>
+            <label for="opensourece">Open Source Community</label>
+          </div>
+          <div>
+            <input type="checkbox" id="gitter" value="six" />
+            <label for="gitter">Gitter help rooms</label>
+          </div>
+          <div>
+            <input type="checkbox" id="videos" value="seven" />
+            <label for="videos">Videos</label>
+          </div>
+          <div>
+            <input type="checkbox" id="citymeetups" value="eight" />
+            <label for="citymeetups">City Meetups</label>
+          </div>
+          <div>
+            <input type="checkbox" id="wiki" value="nine"/>
+            <label for="wiki">Wiki</label>
+          </div>
+          <div>
+            <input type="checkbox" id="forum" value="ten" />
+            <label for="forum">Forum</label>
+          </div>
+          <div>
+            <input type="checkbox" id="courses" value="eleven" />
+            <label for="courses">Additional Courses</label>
+          </div>
+        </div>
+        <div class="question-group">
+          <label>Any comments or suggestions?</label>
+          <textarea type="text" placeholder="Enter your comment here..." /></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
